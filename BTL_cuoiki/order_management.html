@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết sản phẩm</title>
+    <link rel="stylesheet" href="/Web/BTL_cuoiki/assets/font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="/Web/BTL_cuoiki/assets/css/style.css">
+    <link rel="stylesheet" href="/Web/BTL_cuoiki/assets/css/grid.css">
+    <link rel="stylesheet" href="/Web/BTL_cuoiki/assets/css/base.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="web">
+        <!--HEADER-->
+        <header class="header">
+            <div class="logo">
+                <img src="/Web/BTL_cuoiki/assets/img/Logo.png" alt="Kinh Đô Logo">
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="http://127.0.0.1:5501/Web/TKWEB/Home/index.html" class="active">Trang chủ</a></li>
+                    <li><a href="http://127.0.0.1:5501/Web/TKWEB/Descripton/index.html">Giới thiệu</a></li>
+                    <li><a href="http://127.0.0.1:5501/Web/BTL_cuoiki/index.html">Sản phẩm</a></li>
+                    <li><a href="http://127.0.0.1:5501/Web/BTL_cuoiki/catalog.html">Catalog</a></li>
+                    <li><a href="http://127.0.0.1:5501/Web/TKWEB/Hotline/index.html">Liên hệ</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <a href="#"><img src="/Web/BTL_cuoiki/assets/img/ser.png" alt="Search"></a>
+                <a href="http://127.0.0.1:5501/Web/TKWEB/Card/index.html"><img src="/Web/BTL_cuoiki/assets/img/cart.png" alt="Cart"></a>
+                <a href="http://127.0.0.1:5501/Web/QLTK_TT/Page1/index.html"><img src="/Web/BTL_cuoiki/assets/img/user.png" alt="User"></a>
+            </div>
+        </header>
+
+        <!--ODER_MNG-->
+
+        <div class="oder__title">
+           <div class="logo-logo"><img src="/Web/BTL_cuoiki/assets/img/Logo.png" alt="logo"></div> 
+            <h2 class="title-name">Quản lí đơn hàng</h2>
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-12">
+                        <div class="oder-oder">
+
+                            <div class="oder__navbar">
+                                <div class="oder__navbar-item" data-status="processing">Đang xử lý</div>
+                                <div class="oder__navbar-item" data-status="shipping">Đang vận chuyển</div>
+                                <div class="oder__navbar-item" data-status="completed">Hoàn thành</div>
+                            </div>
+                            <div class="product-list">
+                                <!-- Nơi hiển thị danh sách sản phẩm -->
+                                <p class="product-count">Số lượng sản phẩm: <span id="product-count">0</span></p>
+                            </div>                           
+                            <div class="product-product">
+                                <div class="infor-product">
+                                    <img src="/Web/BTL_cuoiki/assets/img/image.png" alt="image" class="infor-img">
+                                    <div class="about-pro">
+                                        <h2 class="name-propro">Trăng vàng hoàng kim</h2>
+                                        <p class="numper">6 cái / hộp</p>
+                                        <div class="num-num">x2</div> <!-- Số lượng sản phẩm -->
+                                    </div>
+                                </div>
+                                <div class="cost-cost">
+                                    <p class="code">#000001</p>
+                                    <p class="costt">499.000đ</p>
+                                    <p class="sum-cost">Tổng tiền: <span>1028.000đ</span></p>
+                                    <div class="more-inf">
+                                        <a href ="http://127.0.0.1:5500/Web/BTL_cuoiki/product-details.html" class="more-infor">Xem chi tiết</a>  
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+            <!--FOOTER-->
+            <div class="footer">
+                <div class="infor-contact">
+                    <div class="contact">
+                        <h2 class="contact__title">Liên hệ</h2>
+                        <div class="name-custom">
+                            <input type="text" class="cus" id="name-cust" name="name-cust" placeholder="Tên của bạn">
+                        </div>
+                        <div class="email-custom">
+                            <input type="text" class="cus" id="email-cust" name="email-cust" placeholder="Email của bạn">
+                        </div>
+                        <div class="comment-custom">
+                            <input type="text" class="cus" id="cmt-cust" name="cmt-cust" placeholder="Góp ý chúng tôi">
+                        </div>
+                        <div class="send-custom">
+                            <div class="send-cus">
+                               <div class="send-cu"><p>Gửi</p></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="addres">
+                        <h2 class="addres__title">Địa chỉ</h2>
+                        <p class="add_information">NHÀ PHÂN PHỐI BÁNH KINH ĐÔ</p>
+                        <p class="add_infor">Địa Chỉ: 116/46 Bình Lợi, Phường 13, Quận Bình Thạnh, TP.HCM</p>
+                        <p class="add_infor">Hotline 1: 0919 838 786 - Zalo</p>
+                        <p class="add_infor">Hotline 2: 0908 003 880 - Zalo</p>
+                        <p class="add_infor">Email: banhkinhdo.net@gmail.com</p>
+                        <p class="add_infor">Website: www.banhkinhdo.vn</p>
+                    </div>
+    
+                    <div class="policy">
+                        <h2 class="addres__title">Chính sách</h2>
+                        <p class="add_infor">Phương thức thanh toán</p>
+                        <p class="add_infor">Chính sách  bảo mật</p>
+                        <p class="add_infor">Chính sách đổi trả</p>
+                        <p class="add_infor">Phương thức vận chuyển</p>
+                        <p class="add_infor">Hướng dẫn đặt hàng</p>
+                        <p class="add_infor">Blog chia sẻ</p>
+                    </div>
+                </div>
+                <div class="contact-img">
+                    <div class="cnt-img"><img src="/Web/BTL_cuoiki/assets/img/image 1.png"  alt=""></div>
+                    <div class="cnt-img"><img src="/Web/BTL_cuoiki/assets/img/image 2.png"  alt=""></div>
+                    <div class="cnt-img"><img src="/Web/BTL_cuoiki/assets/img/image 3.png"  alt=""></div>
+                    <div class="cnt-img"><img src="/Web/BTL_cuoiki/assets/img/image 4.png"  alt=""></div>
+                </div>
+            </div>
+    </div> 
+
+
+    <script>
+const productData = {
+    processing: [
+        { name: "Trăng vàng hoàng kim", quantity: 2, price: "499.000đ", code: "#000001" },
+        { name: "Trăng vàng ngọc khiết", quantity: 1, price: "299.000đ", code: "#000002" }
+    ],
+    shipping: [
+        { name: "Trăng vàng hồng ngọc", quantity: 3, price: "699.000đ", code: "#000003" }
+    ],
+    completed: [
+        { name: "Trăng vàng ngọc trai", quantity: 2, price: "799.000đ", code: "#000004" },
+        { name: "Trăng vàng bảo ngọc", quantity: 1, price: "599.000đ", code: "#000005" },
+        { name: "Trăng vàng cẩm thạch", quantity: 2, price: "899.000đ", code: "#000006" }
+    ]
+};
+
+
+function updateProductList(status) {
+    const products = productData[status] || []; 
+    const productListContainer = document.querySelector('.product-list');
+    productListContainer.innerHTML = ''; 
+
+    products.forEach(product => {
+        const productElement = document.createElement('div');
+        productElement.classList.add('product-product');
+        productElement.innerHTML = `
+            <div class="infor-product">
+                <img src="/Web/BTL_cuoiki/assets/img/image.png" alt="image" class="infor-img">
+                <div class="about-pro">
+                    <h2 class="name-propro">${product.name}</h2>
+                    <p class="numper">6 cái / hộp</p>
+                    <div class="num-num">x${product.quantity}</div>
+                </div>
+            </div>
+            <div class="cost-cost">
+                <p class="code">${product.code}</p>
+                <p class="costt">${product.price}</p>
+                <p class="sum-cost">Tổng tiền: <span>${(product.quantity * parseFloat(product.price.replace('đ', '').replace('.', ''))).toLocaleString()}đ</span></p>
+                <div class="more-infor">Xem chi tiết</div>
+            </div>
+        `;
+        productListContainer.appendChild(productElement);
+    });
+}
+
+const navbarItems = document.querySelectorAll('.oder__navbar-item');
+navbarItems.forEach(item => {
+    item.addEventListener('click', function () {
+        const status = this.getAttribute('data-status');
+        
+        updateProductList(status);
+
+        navbarItems.forEach(nav => nav.classList.remove('active'));
+        this.classList.add('active');
+    });
+});
+
+updateProductList('processing');
+
+
+    </script>
+
+</body>
+</html>

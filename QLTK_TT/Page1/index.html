@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinh Đô</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--HEADER-->
+    <header class="header">
+        <div class="logo">
+            <img src="/Web/assets/img/Logo.png" alt="Kinh Đô Logo">
+        </div>
+        <nav class="nav">
+            <ul>
+                <li>
+                    <a href="http://127.0.0.1:5501/Web/TKWEB/Home/index.html" class="active">Trang chủ</a></li>
+                    <li><a href="http://127.0.0.1:5501/Web/TKWEB/Descripton/index.html">Giới thiệu</a></li>
+                    <li><a href="http://127.0.0.1:5501/Web/BTL_cuoiki/index.html">Sản phẩm</a></li>
+                    <li><a href="http://127.0.0.1:5501/Web/BTL_cuoiki/catalog.html">Catalog</a></li>
+                    <li><a href="http://127.0.0.1:5501/Web/TKWEB/Hotline/index.html" >Liên hệ</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <a href="#"><img src="/Web/assets/img/ser.png" alt="Search"></a>
+            <a href="http://127.0.0.1:5500/Web/TKWEB/Card/index.html"><img src="/Web/assets/img/cart.png" alt="Cart"></a>
+            <a href="http://127.0.0.1:5500/Web/QLTK_TT/Page1/index.html"><img src="/Web/assets/img/user.png" alt="User"></a>
+        </div>
+    </header>
+    <!--Main_Content-->
+    <div class="main_content">
+        <div class="head_first">
+            <img src="/Web/assets/img/Logo.png" alt="" class="logo1">
+            <h1>Thông tin tài khoản</h1>
+        </div>
+        <div class="infor_user ">
+                <div class="infor_address_group">
+                    <div class="infor_group">
+                        <img src="/Web/assets/img/user.png" alt="">
+                        <h2 class="infor">Thông tin</h2>
+                    </div>
+                    <div class="address_group">
+                        <img src="/Web/assets/img/address.png" alt="">
+                        <h2 class="address">Sổ địa chỉ</h2>   
+                    </div> 
+                </div>
+            <form>
+                <div>
+                    <label for="fullname">Họ và tên</label>
+                    <input type="text" id="fullname" placeholder="Nhập họ và tên" />
+                </div>
+                <div class="gender-group">
+                    <label>Giới tính</label>
+                    <label><input type="radio" name="gender" value="Nam" /> Nam</label>
+                    <label><input type="radio" name="gender" value="Nữ" /> Nữ</label>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Nhập email" />
+                </div>
+                <div>
+                    <label for="password">Mật khẩu</label>
+                    <input type="pass" id="password" placeholder="**************" />
+                </div>
+                <div>
+                    <label for="phone">Số điện thoại</label>
+                    <input type="tel" id="phone" placeholder="Nhập số điện thoại"/>
+                </div>
+                <div class="dob-group">
+                    <label>Ngày sinh</label>
+                        <select id="select-1">
+                            <option>Ngày</option>
+                            <script>
+                                for (let i = 1; i <= 31; i++) document.write(`<option>${i}</option>`);
+                            </script>
+                        </select>
+                        <select id="select-1">
+                            <option>Tháng</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                        </select>
+                        <select id="select-1">
+                            <option>Năm</option>
+                            <!-- Thêm các năm từ 1900 đến 2023 -->
+                            <script>
+                                for (let i = 2023; i >= 1900; i--) document.write(`<option>${i}</option>`);
+                            </script>
+                        </select>
+                    </div>
+                <button type="submit" class="submit-btn">LƯU THAY ĐỔI</button>
+            </form>    
+        </div>
+        <!-------------------------------------->
+        <div class="infor_user2 none ">
+            <div class="infor_address_group ">
+                <div class="infor_group2">
+                    <img src="/Web/assets/img/user.png" alt="">
+                    <h2 class="infor2">Thông tin</h2>
+                </div>
+                <div class="address_group2">
+                    <img src="/Web/assets/img/address.png" alt="">
+                    <h2 class="address2">Sổ địa chỉ</h2>   
+                </div> 
+            </div>
+            <div class="add_address_btn_div">
+                <button id="show-popup-btn" class="add_address_btn">+ Thêm địa chỉ mới</button>
+            </div>
+            <div class="paddle"></div>
+            <div class="full_name_address">
+                <div class="default">Mặc định</div>
+                    <p>Họ và tên | SĐT</p>
+                <button id="update" class="update">Cập nhật</button>
+            </div>
+                <input type="text1" class = "input_name" placeholder="Địa chỉ 1">
+                <div class="paddle"></div>
+            <div class="full_name_address2">
+                <p>Họ và tên | SĐT</p>
+                <button id ="update2"class="update2">Cập nhật</button>
+                <button class="remove">Xóa</button>
+            </div>  
+            <input type="text1" class = "input_name"placeholder="Địa chỉ 2">
+            <div class="paddle"></div>
+            <div class="full_name_address2">
+                <p>Họ và tên | SĐT</p>
+                <button id ="update3"class="update3">Cập nhật</button>
+                <button class="remove">Xóa</button>
+            </div>  
+            <input type="text1" class = "input_name" placeholder="Địa chỉ 3">
+
+        </div>
+    </div>
+        <!--FOOTER-->
+       <div class="footer">
+        <div class="infor-contact">
+            <div class="contact">
+                <h2 class="contact__title">Liên hệ</h2>
+                <div class="name-custom">
+                    <input type="text" class="cus" id="name-cust" name="name-cust" placeholder="Tên của bạn">
+                </div>
+                <div class="email-custom">
+                    <input type="text" class="cus" id="email-cust" name="email-cust" placeholder="Email của bạn">
+                </div>
+                <div class="comment-custom">
+                    <input type="text" class="cus" id="cmt-cust" name="cmt-cust" placeholder="Góp ý chúng tôi">
+                </div>
+                <div class="send-custom">
+                    <div class="send-cus">
+                       <div class="send-cu">Gửi</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="addres">
+                <h2 class="addres__title">Địa chỉ</h2>
+                <p class="add_information">NHÀ PHÂN PHỐI BÁNH KINH ĐÔ</p>
+                <p class="add_infor">Địa Chỉ: 116/46 Bình Lợi, Phường 13, Quận Bình Thạnh, TP.HCM</p>
+                <p class="add_infor">Hotline 1: 0919 838 786 - Zalo</p>
+                <p class="add_infor">Hotline 2: 0908 003 880 - Zalo</p>
+                <p class="add_infor">Email: banhkinhdo.net@gmail.com</p>
+                <p class="add_infor">Website: www.banhkinhdo.vn</p>
+            </div>
+
+            <div class="policy">
+                <h2 class="addres__title">Chính sách</h2>
+                <p class="add_infor">Phương thức thanh toán</p>
+                <p class="add_infor">Chính sách  bảo mật</p>
+                <p class="add_infor">Chính sách đổi trả</p>
+                <p class="add_infor">Phương thức vận chuyển</p>
+                <p class="add_infor">Hướng dẫn đặt hàng</p>
+                <p class="add_infor">Blog chia sẻ</p>
+            </div>
+        </div>
+        <div class="contact-img">
+            <div class="cnt-img"><img src="/Web/assets/img/Facebook_icon_color.png"  alt=""></div>
+            <div class="cnt-img"><img src="/Web/assets/img/Instagram.png"  alt=""></div>
+            <div class="cnt-img"><img src="/Web/assets/img/twitter.png"  alt=""></div>
+            <div class="cnt-img"><img src="/Web/assets/img/Tiktok.png"  alt=""></div>
+        </div>
+    </div>
+    
+    <!-- Popup1 -->
+        <div id="popup" class="popup hidden">
+            <div class="popup-content">
+                <div class="popup-header">
+                    <h2>Địa chỉ mới</h2>
+                    <span id="close-btn" class="close-btn">&times;</span>
+                </div>
+                <div class="paddle2"></div>
+                <div class="popup-body">
+                    <div class="infor_important_user">
+                        <label for="fullname_user">Thông tin khách hàng</label>
+                        <input type="text2" id="fullname" placeholder="Nhập họ và tên" />
+                        <input type="text2" id="fullname" placeholder="Nhập số điện thoại" />
+                    </div>
+                        <label for="address_user">Địa chỉ</label>
+                    <form>
+                        <div>                 
+                            <div class="address-group-choose">
+                            <div>
+                                <select id="select-2">
+                                    <option >Chọn Tỉnh/Thành phố</option>
+                                </select>
+                                <select id="select-2">
+                                    <option>Chọn Quận/Huyện</option>
+                                </select>
+                            </div>
+                            <div>
+                                <select id="select-2">
+                                    <option>Chọn Phường/Xã</option>
+                                </select>
+                                <input type="text3" placeholder="Số nhà, địa chỉ">
+                            </div>
+                            </div>
+                        </div>
+                    </form>
+                    <label for="address_user"> Loại địa chỉ</label>
+                    <div class="address-type">
+                        <label>
+                          <input type="radio" name="address-type">
+                          <span class="address-label">Văn phòng</span>
+                        </label>
+                        <label>
+                          <input type="radio" name="address-type">
+                          <span class="address-label">Nhà riêng</span>
+                        </label>
+                    </div>    
+                </div>
+                <div class="popup-footer">
+                    <button id="confirm-btn">Hoàn thành</button>
+                </div>
+            </div>
+        </div>
+    <!-- Popup2 -->
+    <div id="popup2" class="popup2 hidden">
+        <div class="popup-content">
+            <div class="popup-header">
+                <h2>Cập nhật địa chỉ</h2>
+                <span id="close-btn2" class="close-btn">&times;</span>
+            </div>
+            <div class="paddle2"></div>
+            <div class="popup-body">
+                <div class="infor_important_user">
+                    <label for="fullname_user">Thông tin khách hàng</label>
+                    <input type="text2" id="fullname" placeholder="Nhập họ và tên " />
+                    <input type="text2" id="fullname" placeholder="Nhập số điện thoại " />
+                </div>
+                    <label for="address_user">Địa chỉ</label>
+                <form>
+                    <div>                 
+                        <div class="address-group-choose">
+                        <div>
+                            <select id="select-2">
+                                <option >Chọn Tỉnh/Thành phố</option>
+                            </select>
+                            <select id="select-2">
+                                <option>Chọn Quận/Huyện</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select id="select-2">
+                                <option>Chọn Phường/Xã</option>
+                            </select>
+                            <input type="text3" placeholder="Số nhà, địa chỉ">
+                        </div>
+                        </div>
+                    </div>
+                </form>
+                <label for="address_user"> Loại địa chỉ</label>
+                <div class="address-type">
+                    <label>
+                      <input type="radio" name="address-type">
+                      <span class="address-label">Văn phòng</span>
+                    </label>
+                    <label>
+                      <input type="radio" name="address-type">
+                      <span class="address-label">Nhà riêng</span>
+                    </label>
+                </div>    
+            </div>
+            <div class="popup-footer">
+                <button id="confirm-btn2">Hoàn thành</button>
+            </div>
+        </div>
+    </div>
+        <!-- Popup3 -->
+    <div id="popup3" class="popup3 hidden">
+        <div class="popup-content">
+            <div class="popup-header">
+                <h2>Cập nhật địa chỉ</h2>
+                <span id="close-btn3" class="close-btn">&times;</span>
+            </div>
+            <div class="paddle2"></div>
+            <div class="popup-body">
+                <div class="infor_important_user">
+                    <label for="fullname_user">Thông tin khách hàng</label>
+                    <input type="text2" id="fullname" placeholder="Nhập họ và tên 2" />
+                    <input type="text2" id="fullname" placeholder="Nhập số điện thoại 2" />
+                </div>
+                    <label for="address_user">Địa chỉ</label>
+                <form>
+                    <div>                 
+                        <div class="address-group-choose">
+                        <div>
+                            <select id="select-2">
+                                <option >Chọn Tỉnh/Thành phố</option>
+                            </select>
+                            <select id="select-2">
+                                <option>Chọn Quận/Huyện</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select id="select-2">
+                                <option>Chọn Phường/Xã</option>
+                            </select>
+                            <input type="text3" placeholder="Số nhà, địa chỉ">
+                        </div>
+                        </div>
+                    </div>
+                </form>
+                <label for="address_user"> Loại địa chỉ</label>
+                <div class="address-type">
+                    <label>
+                      <input type="radio" name="address-type">
+                      <span class="address-label">Văn phòng</span>
+                    </label>
+                    <label>
+                      <input type="radio" name="address-type">
+                      <span class="address-label">Nhà riêng</span>
+                    </label>
+                </div>    
+            </div>
+            <div class="popup-footer">
+                <button id="confirm-btn3">Hoàn thành</button>
+            </div>
+        </div>
+    </div>
+    <!-- Popup3 -->
+    <div id="popup4" class="popup4 hidden">
+        <div class="popup-content">
+            <div class="popup-header">
+                <h2>Cập nhật địa chỉ</h2>
+                <span id="close-btn4" class="close-btn">&times;</span>
+            </div>
+            <div class="paddle2"></div>
+            <div class="popup-body">
+                <div class="infor_important_user">
+                    <label for="fullname_user">Thông tin khách hàng</label>
+                    <input type="text2" id="fullname" placeholder="Nhập họ và tên 3" />
+                    <input type="text2" id="fullname" placeholder="Nhập số điện thoại 3" />
+                </div>
+                    <label for="address_user">Địa chỉ</label>
+                <form>
+                    <div>                 
+                        <div class="address-group-choose">
+                        <div>
+                            <select id="select-2">
+                                <option >Chọn Tỉnh/Thành phố</option>
+                            </select>
+                            <select id="select-2">
+                                <option>Chọn Quận/Huyện</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select id="select-2">
+                                <option>Chọn Phường/Xã</option>
+                            </select>
+                            <input type="text3" placeholder="Số nhà, địa chỉ">
+                        </div>
+                        </div>
+                    </div>
+                </form>
+                <label for="address_user"> Loại địa chỉ</label>
+                <div class="address-type">
+                    <label>
+                      <input type="radio" name="address-type">
+                      <span class="address-label">Văn phòng</span>
+                    </label>
+                    <label>
+                      <input type="radio" name="address-type">
+                      <span class="address-label">Nhà riêng</span>
+                    </label>
+                </div>    
+            </div>
+            <div class="popup-footer">
+                <button id="confirm-btn4">Hoàn thành</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

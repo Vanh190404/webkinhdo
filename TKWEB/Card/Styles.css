@@ -115,18 +115,33 @@ body {
     flex-direction: column; 
 }
 
+.quanly{
+    display: flex;
+}
+
 .h1_card{
     font-size: 48px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-left: 100px;
+    margin-left: 50px;
+}
+
+.product_control{
+    font-size: 24px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 800px;
+    margin-top: 20px;
+    color: #13141C;
 }
 
 .big_box{
     margin: auto;
-    width: 1240px;
+    width: 1300px;
     height: 820px;
     border: 1px solid black;
     border-radius: 16px;
@@ -144,7 +159,7 @@ body {
 }
 
 .check_box{
-    margin-top: 150px;
+    margin: 70px 15px 15px;
     width: 18px;
     height: 18px;
     flex-shrink: 0;
@@ -160,7 +175,7 @@ body {
 }
 
 .txt_product{
-    margin-top: 40px;
+    margin: 40px 40px;
     color: #000;
     font-family: Montserrat;
     font-size: 32px;
@@ -207,7 +222,7 @@ body {
 }
 
 .add_box{
-    width: 76px;
+    width: 80px;
     height: 34px;
     flex-shrink: 0;
     background-color: #C7635C;
@@ -220,25 +235,42 @@ body {
     font-weight: 700;
     line-height: normal;
     margin-top: 15px ;
+    padding: auto;
     border-radius: 16px;
 }
+
+.decrease,.increase,
+.decrease2,.increase2,
+.decrease3,.increase3,
+.decrease4,.increase4{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    font-size: 30px;
+    cursor: inherit;
+}
+
 span{
     padding: 6px;
     font-size: 20px;
 }
 
-.price{
+.price,
+.price2,
+.price3,
+.price4 {
     margin-left: 100px;
-    color:#242424;
+    color: #242424;
     text-align: center;
     font-family: Montserrat;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    width: 120px; 
+    display: inline-block; 
 }
 
-.product_box_2{
+.product_box_2,.product_box_3,.product_box_4{
     display: flex;
     margin-top: 25px;
     padding: auto;
@@ -254,7 +286,9 @@ span{
 }
 
 .pay{
-    margin: 50px;
+    display: block;
+    margin: 120px;
+    margin-left: 100px;
     color: #242424;
     font-family: Montserrat;
     font-size: 24px;
@@ -280,10 +314,18 @@ span{
 
 .txt_pay{
     position: relative;
-    left: 130px;
+    left: 100px;
+    width: 80px; 
+    display: inline-block; 
 }
+
+.total_pay{
+    margin-left: 30px;
+}
+
 .btn_continue{
     margin: 15px;
+    padding: 15px 20px;
     width: 294px;
     height: 55.2px;
     background-color: #BC433B;
@@ -296,6 +338,7 @@ span{
     line-height: normal;
     border: none;
     border-radius: 33px;
+    text-decoration: none;
 }
 
 .btn_continue:hover{
@@ -307,6 +350,8 @@ span{
     width: 294px;
     height: 55.2px;
     color: #000;
+    margin: 15px;
+    padding: 15px 20px;
     text-align: center;
     font-family: Montserrat;
     font-size: 17.664px;

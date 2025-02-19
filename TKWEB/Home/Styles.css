@@ -120,7 +120,7 @@ body {
 .content_box {
     width: 1235px;
     height: 658.667px;
-    background-image: url('king do.png');
+    background-image: url('/Web/assets/img/banner2.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -197,7 +197,7 @@ button:hover {
 .details {
     width: 100%;
     padding: 15px 20px; 
-    background-color: #F1D49F; /
+    background-color: #F1D49F; 
     border-radius: 0 0 28px 28px; 
     text-align: center; 
     box-sizing: border-box; 
@@ -521,7 +521,7 @@ button:hover {
     bottom: 0;
     width: 1440px;
     height: 600px;
-    background-image: url("img10.png");
+    background-image: url('/Web/assets/img/background.png');
     background-size: cover;
     clip-path: path("M0,150 C300,100 900,350 1440,150 L1440,600 L0,600 Z");
     -webkit-clip-path: path("M0,100 C300,50 900,250 1440,100 L1440,600 L0,600 Z");

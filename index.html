@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -13,29 +14,27 @@
     </head>
     <body>
         <div class="web">
-            <!-- HEADER -->
-            <header class="header">
-                <div class="grid__full-width">
-                    <div class="header__logo">
-                        <a href="#"><img src="./assets/img/Logo.png" alt="Kinh Đô" class=""></a>                           
-                    </div>
-
-                    <div class="header__navbar-1">
-                        <a href="#" class="header__navbar-item header__navbar-home">Trang chủ</a>
-                        <a href="#" class="header__navbar-item header__navbar-intro">Giới thiệu</a>
-                        <a href="#" class="header__navbar-item header__navbar-product">Sản phẩm</a>
-                        <a href="#" class="header__navbar-item header__navbar-catalog">Catalog</a>
-                        <a href="#" class="header__navbar-item header__navbar-access">Liên hệ</a>
-                    </div>
-                    
-                    <div class="header__navbar-2">
-                        <a href="#" class="header__navbar-item"><i class="ti-search"></i></a>
-                        <a href="#" class="header__navbar-item"><i class="ti-shopping-cart"></i></a>
-                        <a href="#" class="header__navbar-item"><i class="ti-user"></i></a>
-                    </div>
-                </div>
-            </header>
-
+            <!--HEADER-->
+    <header class="header">
+        <div class="logo">
+            <img src="/Web/assets/img/Logo.png" alt="Kinh Đô Logo">
+        </div>
+        <nav class="nav">
+            <ul>
+                <li>
+                    <a href="http://127.0.0.1:5501/Web/TKWEB/Home/index.html" class="active">Trang chủ</a></li>
+                    <li><a href="http://127.0.0.1:5501/Web/TKWEB/Descripton/index.html">Giới thiệu</a></li>
+                    <li><a href="http://127.0.0.1:5501/Web/BTL_cuoiki/index.html">Sản phẩm</a></li>
+                    <li><a href="http://127.0.0.1:5501/Web/BTL_cuoiki/catalog.html">Catalog</a></li>
+                    <li><a href="http://127.0.0.1:5501/Web/TKWEB/Hotline/index.html">Liên hệ</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <a href="#"><img src="/Web/assets/img/ser.png" alt="Search"></a>
+            <a href="http://127.0.0.1:5501/Web/TKWEB/Card/index.html"><img src="/Web/assets/img/cart.png" alt="Cart"></a>
+            <a href="http://127.0.0.1:5501/Web/QLTK_TT/Page1/index.html"><img src="/Web/assets/img/user.png" alt="User"></a>
+        </div>
+    </header>
             <!-- CONTENT -->
             <div id="content" class="content">
                 <div class="grid__full-width">
@@ -205,183 +204,6 @@
                 </div>
             </div>
 
-            <div id="content-third" class="content-third">
-                <div class="grid__full-width">
-                    <div class="content-third__image">
-                        <img class="elip" src="./assets/img/Ellipse.png" alt="">
-                        <img class="substract"  src="./assets/img/Subtract.png" alt="">
-                        <img class="tick"  src="./assets/img/tick.png" alt="">
-                    </div>
-
-                    <div class="content-third__heading">
-                        <span>ĐƠN HÀNG CỦA BẠN ĐÃ THANH TOÁN</span>
-                        <span>THÀNH CÔNG !</span> 
-                    </div>
-
-                    <btn class="content__form-btn btn-back-home">
-                        Quay lại trang chủ
-                    </btn>
-                </div>
-            </div>
-
-            <div id="content-four" class="content-four">
-                <div class="grid__full-width">
-                    <div class="content-four content__form-logo">
-                        <img src="./assets/img/Logo.png" alt="Kinh Đô" class="">                          
-                    </div>
-
-                    <div class="content-four__heading">
-                        THANH TOÁN ĐƠN HÀNG CỦA BẠN
-                    </div>
-
-                    <div class="content-four__info">
-                        <div class="content-four__sub-heading">
-                            Thông tin đặt hàng
-                        </div>
-
-                        <div class="content__four-name-input">
-                            <div class="content__four-name-input__heading">Họ và tên*</div>
-                            <input type="text">
-                        </div>
-
-                        <div class="content__four-email-input">
-                            <div class="content__four-email-input__heading">Địa chỉ email*</div>
-                            <input type="text">
-                        </div>
-
-                        <div class="content__four-phone-input">
-                            <div class="content__four-phone-input__heading">Số điện thoại*</div>
-                            <input type="text">
-                        </div>
-
-                        <label class="content__four-city-select__heading" for="city-select">Tỉnh/Thành phố*</label>
-                        <select class="content__four-city-select" name="city" id="city-select">
-                            <option value="">--Please choose an option--</option>
-                            <option value="HN">Hà Nội</option>
-                            <option value="HCM">Hồ Chí Minh</option>
-                            <option value="PT">Phú Thọ</option>
-                            <option value="NĐ">Nam Định</option>
-                            <option value="TH">Thanh Hoá</option>
-                            <option value="BN">Bắc Ninh</option>
-                        </select>
-
-                        <label class="content__four-district-select__heading" for="district-select">Quận/Huyện*</label>
-                        <select class="content__four-district-select" name="district" id="district-select">
-                            <option value="">--Please choose an option--</option>
-                            <option value="HN">Hà Nội</option>
-                            <option value="HCM">Hồ Chí Minh</option>
-                            <option value="PT">Phú Thọ</option>
-                            <option value="NĐ">Nam Định</option>
-                            <option value="TH">Thanh Hoá</option>
-                            <option value="BN">Bắc Ninh</option>
-                        </select>
-
-                        <label class="content__four-town-select__heading" for="town-select">Phường/Xã*</label>
-                        <select class="content__four-town-select" name="town" id="town-select">
-                            <option value="">--Please choose an option--</option>
-                            <option value="HN">Hà Nội</option>
-                            <option value="HCM">Hồ Chí Minh</option>
-                            <option value="PT">Phú Thọ</option>
-                            <option value="NĐ">Nam Định</option>
-                            <option value="TH">Thanh Hoá</option>
-                            <option value="BN">Bắc Ninh</option>
-                        </select>
-
-                        <div class="content__four-address-input">
-                            <div class="content__four-address-input__heading">Địa chỉ cụ thể*</div>
-                            <input type="text">
-                        </div>
-
-                        <div class="content__four-note-input">
-                            <div class="content__four-note-input__heading">Chú thích đơn hàng*</div>
-                            <input type="text">
-                        </div>
-
-                        <div class="content-four__sub-heading">
-                            Thông tin thanh toán sản phẩm
-                        </div>
-
-                        <div class="content-four__product-info">
-                            <table class="content-four__product-info-table">
-                                <tr class="content-four__product-info-table__heading">
-                                    <th class="product">Sản phẩm</th>
-                                    <th class="price">Đơn giá</th>
-                                    <th class="quantity">Số lượng</th>
-                                    <th class="total">Thành tiền</th>
-                                </tr>
-                                <tr class="content-four__product-info-table__item">
-                                    <td class="item-name">
-                                        <img src="./assets/img/product.png" alt="">
-                                        <div>Hộp thu tuyết 6 bánh</div>
-                                    </td>
-                                    <td class="item-price">450.000VND</td>
-                                    <td class="item-quantity">1</td>
-                                    <td class="item-total">450.000VND</td>
-                                </tr>
-                                <tr class="content-four__product-info-table__item">
-                                    <td class="item-name">
-                                        <img src="./assets/img/product.png" alt="">
-                                        <div>Hộp thu tuyết 6 bánh</div>
-                                    </td>
-                                    <td class="item-price">450.000VND</td>
-                                    <td class="item-quantity">1</td>
-                                    <td class="item-total">450.000VND</td>
-                                </tr>
-                            </table>
-
-                            <svg width="1200px" xmlns="http://www.w3.org/2000/svg">
-                                <line x1="0" y1="8" x2="1175" y2="8" style="stroke:#E7E8E8; stroke-width:2" />
-                            </svg>
-
-                            <table class="content-four__user-info-table">
-                                <tr class="content-four__user-info-table__heading">
-                                    <th class="address">Địa chỉ nhận hàng</th>
-                                    <th class="fee">Phí vận chuyển</th>
-                                </tr>
-                                <tr class="content-four__user-info-table__item">
-                                    <td class="address-info">Phường Mộ Lao, quận Hà Đông, thành phố Hà Nội</td>
-                                    <td class="fee-info">30.000VND</td>
-                                </tr>
-                            </table>
-
-                            <div class="content-four__product-sale-off">
-                                <div class="content-four__product-sale-off__heading">
-                                    Mã giảm giá (Nhập vào nếu có):
-                                </div>
-                                <div class="content-four__product-sale-off__input">
-                                    <input type="text" class="sale-off__input">
-                                    <button type="text" class="sale-off__btn">Áp dụng</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="content-four__sub-heading pay-method">
-                            Phương thức thanh toán
-                        </div>
-
-                        <btn id="btn-cod-pay" class="content__form-btn btn-cod-pay" onclick="CodPayChosen()">
-                            Thanh toán khi nhận hàng (COD)
-                        </btn>
-
-                        <btn id="btn-qr-pay" class="content__form-btn btn-qr-pay" onclick="QrPayChosen()">
-                            Chuyển khoản qua ngân hàng (QR Code)
-                        </btn>
-
-                        <div class="content-four__sub-heading pay-total">
-                            Tổng thanh toán: 
-                        </div>
-
-                        <svg width="1400px" xmlns="http://www.w3.org/2000/svg">
-                            <line x1="0" y1="8" x2="1320" y2="8" style="stroke:rgba(0, 0, 0, 0.4); stroke-width:2" />
-                        </svg>
-
-                        <btn id="pay-order-btn" class="content__form-btn btn-order" onclick="ChangeToPaySuccess()">
-                            Đặt hàng
-                        </btn>
-                    </div>
-                </div>
-            </div>
-
             <!-- FOOTER -->
             <div class="footer">
                 <div class="grid__full-width">
@@ -433,10 +255,16 @@
     <script>
         var home = 0, signup = 1, login = 0, btncodpay = 0, btnqrpay = 0,
             resetpass = 0, resetconfirm = 0, payorder = 0, paysuccess = 0;
+
         const root = document.querySelector(':root');
         const SignUpBtn = document.getElementById("sign-up-btn");
         const PayOrderBtn = document.getElementById("pay-order-btn");
-        var SignUpEmail, SignUpName, SignUpPass, EmailResetInput;
+
+        var SignUpEmail, SignUpName, SignUpPass, EmailResetInput,
+        SelectAddress, ListAddress, AddressSelected = 0,
+        NameOption, PhoneOption, AddressOption, NameTemp, PhoneTemp, AgeTemp,
+        NameDefault = "Trần Minh Hoàng", PhoneDefault = "0303030303", AddressDefault = "Phùng Khoang, Trung Văn",
+        NameSelected, PhoneSelected, AddressSelected, TagDefault;
 
         const SignUpForm = document.getElementById("sign-up-form");
         const LogInForm = document.getElementById("log-in-form");
@@ -556,6 +384,80 @@
             BtnQrPay.style = "background-color: var(--black-color); color: var(--white-color);"   
             btnqrpay = 1;             
         }
+
+        function SelectAddress() {
+            ListAddress = document.getElementById("user-select-address");
+
+            if (AddressSelected == 1) {
+                AddressSelected = 0;
+                ListAddress.style = 'display: none;';
+            }
+            else {
+                AddressSelected = 1;
+                ListAddress.style = 'display: block;';
+            }
+        }
+
+        function switchAddress(index) {
+            TagDefault = document.getElementById("tag-default");
+            NameSelected = document.getElementById("name-option-default");
+            PhoneSelected = document.getElementById("phone-option-default");
+            AddressSelected = document.getElementById("address-option-default");
+
+            NameOption = document.querySelectorAll('#name-option');
+            PhoneOption = document.querySelectorAll('#phone-option');
+            AddressOption = document.querySelectorAll('#address-option');
+
+            switch (index) {
+                case 1:
+                    NameTemp = NameOption[0].textContent;
+                    PhoneTemp = PhoneOption[0].textContent;
+                    AddressTemp = AddressOption[0].textContent;
+
+                    NameOption[0].textContent = NameSelected.textContent;
+                    PhoneOption[0].textContent = PhoneSelected.textContent;
+                    AddressOption[0].textContent = AddressSelected.textContent;
+
+                    NameSelected.textContent = NameTemp;
+                    PhoneSelected.textContent = PhoneTemp;
+                    AddressSelected.textContent = AddressTemp;
+                    break;
+                case 2:
+                    NameTemp = NameOption[1].textContent;
+                    PhoneTemp = PhoneOption[1].textContent;
+                    AddressTemp = AddressOption[1].textContent;
+
+                    NameOption[1].textContent = NameSelected.textContent;
+                    PhoneOption[1].textContent = PhoneSelected.textContent;
+                    AddressOption[1].textContent = AddressSelected.textContent;
+
+                    NameSelected.textContent = NameTemp;
+                    PhoneSelected.textContent = PhoneTemp;
+                    AddressSelected.textContent = AddressTemp;
+                    break;
+                case 3:
+                    NameTemp = NameOption[2].textContent;
+                    PhoneTemp = PhoneOption[2].textContent;
+                    AddressTemp = AddressOption[2].textContent;
+
+                    NameOption[2].textContent = NameSelected.textContent;
+                    PhoneOption[2].textContent = PhoneSelected.textContent;
+                    AddressOption[2].textContent = AddressSelected.textContent;
+
+                    NameSelected.textContent = NameTemp;
+                    PhoneSelected.textContent = PhoneTemp;
+                    AddressSelected.textContent = AddressTemp;
+                    break;
+            }
+
+            if (NameTemp==NameDefault && PhoneTemp==PhoneDefault && AddressTemp==AddressDefault) {
+                TagDefault.style = "opacity: 1;"
+            }
+            else {
+                TagDefault.style = "opacity: 0;"
+
+            }
+            SelectAddress();
+        }
     </script>
 </html>
-
